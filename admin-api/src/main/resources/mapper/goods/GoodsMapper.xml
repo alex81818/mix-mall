@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.calvin.mixmall.admin.goods.dao.GoodsDao">
+
+    <!--<select id="selectPageVo" resultType="com.calvin.mixmall.admin.goods.entity.Goods">-->
+        <!--SELECT id,title,market_price,sell_price,img_url,update_time FROM goods-->
+        <!--<where>-->
+            <!--<if test="title != null and title != ''"> and title LIKE concat('%',#{title},'%')</if>-->
+        <!--</where>-->
+        <!--order by id desc-->
+    <!--</select>-->
+</mapper>

@@ -1,0 +1,27 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: admin-api
+  profiles:
+    active: dev
+
+mybatis:
+  #开启驼峰命名法
+  configuration:
+    map-underscore-to-camel-case: true
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*Mapper.xml
+  type-aliases-package: com.calvin.mixmall.*.entity   # 实体扫描，多个package用逗号或者分号分隔自己的实体类地址
+  global-config:
+    db-config:
+      id-type: AUTO
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+
+
+swagger2:
+  enable: true
+
+
